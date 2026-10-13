@@ -37,17 +37,17 @@
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="USUN"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="ZAPISZ"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
