@@ -6,15 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_marginTop="20dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Domek w górach" />
+        android:text="Domek w górach"
+        android:textSize="26dp"
+        android:textColor="#808080"/>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewObrazek"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
@@ -23,58 +26,66 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="#008080">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/buttonPolub"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="POLUB"
+            android:backgroundTint="#008080"
             android:textColor="@color/white" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/buttonUsun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="USUN"
+            android:backgroundTint="#008080"
             android:textColor="@color/white" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/buttonZapisz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="ZAPISZ"
+            android:backgroundTint="#008080"
             android:textColor="@color/white" />
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewPolubienia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="jakis tekst" />
+        android:text="0 polubień"
+        android:textAlignment="textEnd"/>
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewLinia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView"
         android:textSize="2dp"
-        android:background="@color/black"/>
+        android:background="#808080"/>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewOpis"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Opis" />
+        android:text="Opis"
+        android:textColor="#808080"
+        android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textViewTresc"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Odwiedź komfortowy domek w Sudetach, blisko do szlaków turystycznych" />
+        android:text="Odwiedź komfortowy domek w Sudetach, blisko do szlaków turystycznych"
+        android:textColor="#808080"/>
 
 </LinearLayout>
