@@ -1,6 +1,7 @@
 package com.example.domekwgorach3pt2gr;
 
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +10,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+    private static int licznikPolubien = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +22,11 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Button buttonPolub = findViewById(R.id.buttonPolub);
+        Button buttonUsun = findViewById(R.id.buttonUsun);
+        Button buttonZapisz = findViewById(R.id.buttonZapisz);
+
+
     }
 }
