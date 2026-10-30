@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Domek w górach"
+            android:textColor="#808080"
+            android:textSize="26dp" />
+
+        <ImageView
+            android:id="@+id/imageViewObrazek"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/obraz" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+        android:id="@+id/textViewPolubienia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 polubień"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textViewLinia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#808080"
+        android:text="TextView"
+        android:textSize="2dp" />
+
+    <TextView
+        android:id="@+id/textViewOpis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opis"
+        android:textColor="#808080"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewTresc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Odwiedź komfortowy domek w Sudetach, blisko do szlaków turystycznych"
+        android:textColor="#808080" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#008080"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonPolub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#008080"
+            android:text="POLUB"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/buttonUsun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#008080"
+            android:text="USUN"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/buttonZapisz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#008080"
+            android:text="ZAPISZ"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
